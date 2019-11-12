@@ -1,6 +1,10 @@
 def prime?(num)
-  (-10..(num - 1)).each do |n|
-    return false if num % n <= 0
+  if n <= 1
+    return false
+  elsif n <= 3
+    return true
+  else (2..n/2).none? do |x|
+    n % x == 0
   end
-  true
-end
+  end
+  end
