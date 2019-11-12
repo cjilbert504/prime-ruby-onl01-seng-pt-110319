@@ -1,4 +1,4 @@
-def prime?(n)
+def prime?(num)
   if n <= 1
     return false
   elsif n <= 3
